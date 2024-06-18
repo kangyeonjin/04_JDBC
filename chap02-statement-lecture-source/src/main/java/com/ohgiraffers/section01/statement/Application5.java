@@ -19,7 +19,7 @@ public class Application5 {
         //1. connection 객체생성
         Connection con = getConnection();
 
-        //2. statement 생성
+        //2. statement 생성 //쿼리문을 작성해서 데이터베이스에 요청하기위해 사용하는 객체
         Statement stmt = null;
 
         //3. resultset 생성
@@ -83,6 +83,15 @@ public class Application5 {
           }
 
         }
+         /*statement 의 문제점
+        1. 에러가 발생하면 쿼리가 그대로 드러난다
+        2. 완전한 쿼리를 사용하다보니, 조작이 가능해진다
+        3. sql인젝션
+        4. 많은 요청에대한 가능해짐
+        * */
+
+
+
 
     }
 }
