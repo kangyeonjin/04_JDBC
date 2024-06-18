@@ -6,9 +6,9 @@ public class employeeDTO {
 
     private int EMP_ID;
     private String EMP_NAME;
-    private int EMP_NO;
+    private String EMP_NO;
     private String EMAIL;
-    private int PHONE;
+    private String PHONE;
     private String DEPT_CODE;
     private String JOB_CODE;
     private String SAL_LEVEL;
@@ -17,6 +17,8 @@ public class employeeDTO {
     private int MANAGER_ID;
     private Date HIRE_DATE;
     private Date ENT_DATE;
+    private String ENT_YN;
+
 
     public String getENT_YN() {
         return ENT_YN;
@@ -90,11 +92,11 @@ public class employeeDTO {
         this.DEPT_CODE = DEPT_CODE;
     }
 
-    public int getPHONE() {
+    public String getPHONE() {
         return PHONE;
     }
 
-    public void setPHONE(int PHONE) {
+    public void setPHONE(String PHONE) {
         this.PHONE = PHONE;
     }
 
@@ -106,11 +108,11 @@ public class employeeDTO {
         this.EMAIL = EMAIL;
     }
 
-    public int getEMP_NO() {
+    public String getEMP_NO() {
         return EMP_NO;
     }
 
-    public void setEMP_NO(int EMP_NO) {
+    public void setEMP_NO(String EMP_NO) {
         this.EMP_NO = EMP_NO;
     }
 
@@ -130,7 +132,6 @@ public class employeeDTO {
         this.EMP_ID = EMP_ID;
     }
 
-    private String ENT_YN;
 
     @Override
     public String toString() {

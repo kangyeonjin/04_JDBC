@@ -35,16 +35,17 @@
     <entry key="updateEmployee">
         update employee
         set emp_name = ?
+        where emp_name = ?
 
     </entry>
 
 <!--  삭제 입니다  -->
 
-    <entry key="deleteMenu">
+    <entry key="deleteEmployee">
 
         delete
         from employee
-        where emp_no = ?
+        where emp_id = ?
 
     </entry>
 

@@ -30,7 +30,7 @@ public class JDBCTemplate {
 
     }
 
-    public static void close(Connection con){
+    public static void close(Connection  con){
         try {
             if(con != null && !con.isClosed()){
 
